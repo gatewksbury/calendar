@@ -33,10 +33,10 @@ RUN                     echo "APT::Get::Assume-Yes true;" >> /etc/apt/apt.conf.d
 #
 # These parameters are specific to your own Postfix relay!  Use your host and domain
 # names.
-RUN                     echo "postfix postfix/mailname string calendar.example.org" | debconf-set-selections && \
+RUN                     echo "postfix postfix/mailname string localhost" | debconf-set-selections && \
                         echo "postfix postfix/main_mailer_type string 'Satellite system'" | debconf-set-selections && \
-                        echo "postfix postfix/relayhost string smtpcal.example.org" | debconf-set-selections && \
-                        echo "postfix postfix/root_address string cal-bounce@example.org" | debconf-set-selections
+                        echo "postfix postfix/relayhost string localhost" | debconf-set-selections && \
+                        echo "postfix postfix/root_address string cal-bounce@localhost" | debconf-set-selections
 
 
 ### "system-requirements"

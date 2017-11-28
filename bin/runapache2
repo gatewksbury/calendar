@@ -1,4 +1,4 @@
-#!/bin/bash
+!/bin/bash
 
 # Copyright (c) 2016 by CIME Software Ltd.  All rights reserved.
 
@@ -31,4 +31,3 @@ service rsyslog start
 service postfix start
 
 /usr/sbin/apache2 -DFOREGROUND
-

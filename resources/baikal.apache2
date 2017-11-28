@@ -1,8 +1,8 @@
-ServerName calendar.example.org
+ServerName localhost
 
 <VirtualHost *:80>
 	DocumentRoot /var/www/calendar_server/html
-	ServerName calendar.example.org
+	ServerName localhost
 	
     RewriteEngine On
     RewriteRule /.well-known/carddav /dav.php [R,L]

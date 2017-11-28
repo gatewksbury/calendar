@@ -9,7 +9,7 @@ if [[ -n "$CONTAINER_DOMAIN_NAME" ]]
 then
     DOMAIN_NAME="$CONTAINER_DOMAIN_NAME"
 else
-    DOMAIN_NAME="example.org"
+    DOMAIN_NAME="localhost"
 fi
 
 if [[ -n "$CONTAINER_HOST_NAME" ]]
